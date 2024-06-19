@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Countdown Timer</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+     background-image:url(https://img.freepik.com/free-vector/detailed-hand-painted-pink-watercolour-background_1048-17039.jpg);
+  } 
+  
+  
+  #countdown {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius:50px ;
+    background-image:url(https://img.freepik.com/free-vector/detailed-hand-painted-pink-watercolour-background_1048-17039.jpg);
+    color: white;
+    border-color: white;
+  }
+</style>
+</head>
+<body>
+
+<div id="countdown">10:00</div>
+<button onclick="startTimer()">Start</button>
+<button onclick="stopTimer()">Stop</button>
+<button onclick="resetTimer()">Reset</button>
+
+<script>
+  var timeLeft;
+  var timerId;
+  var timerRunning = false;
+
+  function startTimer() {
+    if (!timerRunning) {
+      var countdown = document.getElementById("countdown").textContent;
+      var timeArray = countdown.split(":");
+      var minutes = parseInt(timeArray[0], 10);
+      var seconds = parseInt(timeArray[1], 10);
+
+      timeLeft = minutes * 60 + seconds;
+
+      timerId = setInterval(function() {
+        timeLeft--;
+        if (timeLeft >= 0) {
+          var minutes = Math.floor(timeLeft / 60);
+          var seconds = timeLeft % 60;
+
+          document.getElementById("countdown").textContent = 
+            ("0" + minutes).slice(-2) + ":" + ("0" + seconds).slice(-2);
+        } else {
+          clearInterval(timerId);
+          document.getElementById("countdown").textContent = "00:00";
+        }
+      }, 1000);
+
+      timerRunning = true;
+    }
+  }
+
+  function stopTimer() {
+    clearInterval(timerId);
+    timerRunning = false;
+  }
+
+  function resetTimer() {
+    clearInterval(timerId);
+    timerRunning = false;
+    document.getElementById("countdown").textContent = "10:00"; // Reset to your desired initial time
+  }
+</script>
+
+</body>
+</html>

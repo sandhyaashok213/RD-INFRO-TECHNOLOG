@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+     <img src="https://st2.depositphotos.com/5142301/7551/v/450/depositphotos_75512255-stock-illustration-abstract-sphere-logo.jpg" alt="Logo">
+     <h1>CREATE YOUR ACCOUNT</h1>
+     <input type="submit" value="login">
+  </div>
+  <div class="main">
+    <div class="bar"> 
+      <div class="container profile">
+       <div class="container profile1">
+        <a href="index.html" class="header-button">Your Profile</a>
+       </div>
+       <div class="container profile2">
+        <a href="business_information.html" class="header-button">Business Information</a>
+       </div>
+       <div class="container profile3">
+        <a href="additional_information.html" class="header-button">Additional Information</a>
+      </div>
+      </div>
+    </div>
+    <h1>YOUR PROFILE</h1>
+      <h2>Enter the login information for your account. You will be able to create additional users after registration</h2>
+      <form>
+        <div class="form-group">
+          <label for="firstName">First Name*</label>
+          <input type="text" id="firstName" name="firstName" placeholder="Enter">
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name*</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Enter">
+        </div>
+        <div class="form-group">
+          <label for="email">Email*</label>
+          <input type="email" id="email" name="email" placeholder="Enter">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number*</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter">
+        </div>
+        <div class="form-group">
+          <label for="password">Password*</label>
+          <input type="password" id="password" name="password" placeholder="Enter">
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password*</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Enter">
+        </div>
+      </form>
+    </div>
+    <div class="form-group" >
+      <input type="submit"  value="Next">
+    </div>
+
+  <script>
+    function redirectToProfile() {
+      window.location.href = "index.html";
+    }
+    function redirectToBusiness() {
+      window.location.href = "business_information.html";
+    }
+    function redirectToAdditional() {
+      window.location.href = "additional_information.html";
+    }
+  </script>
+</body>
+</html>

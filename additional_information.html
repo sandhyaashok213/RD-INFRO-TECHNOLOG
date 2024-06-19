@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+     <img src="https://st2.depositphotos.com/5142301/7551/v/450/depositphotos_75512255-stock-illustration-abstract-sphere-logo.jpg" alt="Logo">
+     <h1>CREATE YOUR ACCOUNT</h1>
+     <input type="submit" value="login">
+  </div>
+  <div class="main">
+    <div class="bar"> 
+      <div class="container profile">
+       <div class="container profile1">
+        <a href="index.html" class="header-button">Your Profile</a>
+       </div>
+       <div class="container profile2">
+        <a href="business_information.html" class="header-button">Business Information</a>
+       </div>
+       <div class="container profile3">
+         <a href="additional_information.html" class="header-button">Additional Information</a>
+       </div>
+      </div>
+    </div>
+    <h1>Additional Information</h1>
+      <h2>In addition to standard fields, our form asks about interests, industry, and how you found us, ensuring personalized experiences.</h2>
+      <form>
+        <div class="form-group">
+            <label for="referral">Bio</label>
+            <input type="text" id="referral" name="referral" placeholder="Enter">
+        </div>
+    <div class="form-group">
+        <label for="referral">How did you hear about us?</label>
+        <input type="text" id="referral" name="referral" placeholder="Enter how you found us">
+    </div>
+      </form>
+    </div>
+    <div class="form-group" >
+      <input type="submit"  value="submit">
+    </div>
+
+  <script>
+    function redirectToProfile() {
+      window.location.href = "index.html";
+    }
+    function redirectToBusiness() {
+      window.location.href = "business_information.html";
+    }
+    function redirectToAdditional() {
+      window.location.href = "additional_information.html";
+    }
+  </script>
+</body>
+</html>
+

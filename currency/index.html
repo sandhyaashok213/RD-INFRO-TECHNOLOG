@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>Currency Converter</header>
+        <form action="#">
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input type="text" value="1">
+            </div>
+            <div class="drop-list">
+                <div class="from">
+                    <p>from</p>
+                    <div class="select-box">
+                        <img src="https://flagsapi.com/US/shiny/64.png" >
+                        <select>
+                            <option value="USD">USD</option>
+                            <option value="NPR">NPR</option>
+                            <option value="LNR">LNR</option>
+                            <option value="PKR">PKR</option>
+                            <option value="MAD">MAD</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+                <div class="to">
+                    <p>to</p>
+                    <div class="select-box">
+                        <img src="https://flagsapi.com/IN/shiny/64.png">
+                        <select>
+                            <option value="USD">USD</option>
+                            <option value="NPR">NPR</option>
+                            <option value="LNR">LNR</option>
+                            <option value="PKR">PKR</option>
+                            <option value="MAD">MAD</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="exchange rate">1 USD-118.16 NPR</div>
+            <button>Get Exchange Rate</button>
+        </form>
+
+    </div>
+</body>
+</html>

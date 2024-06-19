@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://wallpapers-clan.com/wp-content/uploads/2023/01/abstract-art-light-blue-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header h1 {
+    color: azure;
+    margin: 0;
+}
+
+.header img {
+    width: 80px;
+    height: 60px;
+}
+
+.header .header-button {
+    text-decoration: none;
+    background: none;
+    color: azure;
+    border: 2px solid azure;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.header .header-button:hover {
+    background-image: url(https://w0.peakpx.com/wallpaper/723/40/HD-wallpaper-oh-deep-blue-blue-light-blue-aesthetic-colorful-bright-blue-light.jpg);
+    color: white;
+}
+
+.main {
+    background-color: azure;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.bar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    background-image: url(https://wallpapers-clan.com/wp-content/uploads/2023/01/abstract-art-light-blue-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: sticky;
+}
+
+.container {
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.container a {
+    color: white;
+    text-align: center;
+}
+
+.container a:hover {
+    text-decoration: underline;
+    color: white;
+    font-size: 30px;
+}
+
+.main h2 {
+    font-size: 20px;
+    color: lightblue;
+    line-height: 1.5;
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.main h1 {
+    font-size: 35px;
+    color: lightblue;
+    text-align: center;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.header input {
+    width: 80px;
+    height: 40px;
+    background: none;
+    color: azure;
+    border: 2px solid azure;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header input:hover {
+    background-image:url(https://w0.peakpx.com/wallpaper/723/40/HD-wallpaper-oh-deep-blue-blue-light-blue-aesthetic-colorful-bright-blue-light.jpg) ;
+    color: white;
+}
+.form-group input[type="submit"] {
+    width: 80px;
+    height: 40px;
+    background: none;
+    color: azure;
+    border: 2px solid azure;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 1000px; ;
+}
+
+
+.form-group input[type="submit"]:hover {
+    background-image:url(https://w0.peakpx.com/wallpaper/723/40/HD-wallpaper-oh-deep-blue-blue-light-blue-aesthetic-colorful-bright-blue-light.jpg) ;
+    color: white;
+} 
+    
+
+
+
+
+
+
+
+
